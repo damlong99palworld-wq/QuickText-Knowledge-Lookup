@@ -1,0 +1,75 @@
+{
+  "settings": {
+    "open_menu_hotkey": "ctrl+f1",
+    "restore_clipboard": true,
+    "start_minimized": false,
+    "show_tray": true,
+    "start_with_windows": false,
+    "popup_position": "mouse",
+    "close_after_select": true,
+    "insert_mode": "paste",
+    "recent_limit": 8
+  },
+  "categories": [
+    "General",
+    "Unreal",
+    "Claude",
+    "ChatGPT",
+    "Grok",
+    "Code",
+    "Debug"
+  ],
+  "snippets": [
+    {
+      "id": "snip_continue",
+      "name": "Tiếp tục",
+      "text": "Tiếp tục triển khai bước tiếp theo.\nKhông mở rộng phạm vi.\nSau khi xong: compile, save, rồi dừng và báo kết quả.",
+      "category": "General",
+      "favorite": true,
+      "hotkey": "ctrl+shift+1",
+      "action": "default",
+      "usage_count": 0
+    },
+    {
+      "id": "snip_nopie",
+      "name": "Không chạy PIE",
+      "text": "Do NOT run PIE.\nDo NOT spawn actors while PIE is active.\nDo not modify Blueprint graphs while PIE is running.",
+      "category": "Unreal",
+      "favorite": true,
+      "hotkey": "ctrl+shift+3",
+      "action": "default",
+      "usage_count": 0
+    },
+    {
+      "id": "snip_compile",
+      "name": "Compile + Save",
+      "text": "After completing the changes:\n1. Compile\n2. Save\n3. Stop and report what was changed.",
+      "category": "Unreal",
+      "favorite": true,
+      "hotkey": "",
+      "action": "default",
+      "usage_count": 0
+    },
+    {
+      "id": "snip_safe_bp",
+      "name": "Claude — Safe Blueprint Edit",
+      "text": "Do NOT run PIE.\n\nOnly inspect and modify the requested Blueprint.\n\nAfter completing the changes:\n1. Compile\n2. Save\n3. Stop and report what was changed.",
+      "category": "Claude",
+      "favorite": true,
+      "hotkey": "",
+      "action": "default",
+      "usage_count": 0
+    },
+    {
+      "id": "snip_status",
+      "name": "Tổng hợp trạng thái",
+      "text": "Tóm tắt ngắn:\n- Đã xong\n- Đang kẹt\n- File nào đã sửa\n- Log cần đọc tiếp\nKhông đề xuất phạm vi mới.",
+      "category": "Claude",
+      "favorite": false,
+      "hotkey": "",
+      "action": "default",
+      "usage_count": 0
+    }
+  ],
+  "recent": []
+}

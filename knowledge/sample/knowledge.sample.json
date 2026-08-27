@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "knowledge_niagara_component",
+      "name": "Niagara Component",
+      "color": "#b56cff",
+      "aliases": ["NiagaraComponent", "UNiagaraComponent"],
+      "category": "UE5 / VFX",
+      "short_description": "Component used to attach and control a Niagara System on an Actor.",
+      "tags": ["UE5", "VFX", "Niagara"],
+      "properties": [
+        {
+          "id": "prop_nc_where",
+          "name": "Where to Find",
+          "value": "Blueprint → Add Component → Niagara"
+        },
+        {
+          "id": "prop_nc_when",
+          "name": "When to Use",
+          "value": "When VFX needs to exist on and follow an Actor."
+        },
+        {
+          "id": "prop_nc_perf",
+          "name": "Performance Notes",
+          "value": "- Do not keep too many Niagara Components active at once.\n- Deactivate or destroy when the effect is finished."
+        },
+        {
+          "id": "prop_nc_related",
+          "name": "Related Concepts",
+          "value": "Niagara System\nNiagara Emitter\nSpawn System Attached"
+        }
+      ]
+    },
+    {
+      "id": "knowledge_gameplay_tag",
+      "name": "Gameplay Tag",
+      "color": "#62d98b",
+      "aliases": ["GameplayTag", "Tag"],
+      "category": "UE5 / GAS",
+      "short_description": "Hierarchical label used by Gameplay Ability System to identify states, events, and data.",
+      "tags": ["UE5", "GAS", "Tag"],
+      "properties": [
+        {
+          "id": "prop_gt_where",
+          "name": "Where to Find",
+          "value": "Project Settings → Gameplay Tags"
+        },
+        {
+          "id": "prop_gt_when",
+          "name": "When to Use",
+          "value": "When you need a stable, hierarchical identifier instead of a raw string or enum."
+        },
+        {
+          "id": "prop_gt_related",
+          "name": "Related Concepts",
+          "value": "Gameplay Ability\nGameplay Effect\nAbility System Component"
+        }
+      ]
+    },
+    {
+      "id": "knowledge_gameplay_ability",
+      "name": "Gameplay Ability",
+      "color": "#68c5ff",
+      "aliases": ["GameplayAbility", "GA", "Ability"],
+      "category": "UE5 / GAS",
+      "short_description": "GAS unit that represents an activatable action such as an attack, dash, or interact.",
+      "tags": ["UE5", "GAS", "Combat", "Ability"],
+      "properties": [
+        {
+          "id": "prop_ga_when",
+          "name": "When to Use",
+          "value": "When a character action needs prediction, tags, costs, cooldowns, and replication."
+        },
+        {
+          "id": "prop_ga_nodes",
+          "name": "Important Nodes",
+          "value": "- Activate Ability\n- Commit Ability\n- End Ability\n- Wait Target Data"
+        },
+        {
+          "id": "prop_ga_related",
+          "name": "Related Concepts",
+          "value": "Gameplay Effect\nGameplay Tag\nAbility System Component"
+        }
+      ]
+    },
+    {
+      "id": "knowledge_motion_warping",
+      "name": "Motion Warping",
+      "color": "#ffb347",
+      "aliases": ["MotionWarp", "Root Motion Warping"],
+      "category": "UE5 / Animation",
+      "short_description": "Warps root motion during an Anim Montage so the character lands on a target location or rotation.",
+      "tags": ["UE5", "Animation", "Combat"],
+      "properties": [
+        {
+          "id": "prop_mw_when",
+          "name": "When to Use",
+          "value": "Melee attacks, vaults, climbs, and interactions that must hit a precise point."
+        },
+        {
+          "id": "prop_mw_mistakes",
+          "name": "Common Mistakes",
+          "value": "- Forgetting to add a Motion Warping component.\n- Warp window not covering the needed montage section.\n- Target transform not updated before the warp window."
+        }
+      ]
+    },
+    {
+      "id": "knowledge_anim_montage",
+      "name": "Anim Montage",
+      "aliases": ["Animation Montage", "UAnimMontage"],
+      "category": "UE5 / Animation",
+      "short_description": "Playable animation asset with sections, notifies, and blending used for one-shot actions.",
+      "tags": ["UE5", "Animation"],
+      "properties": [
+        {
+          "id": "prop_am_when",
+          "name": "When to Use",
+          "value": "Attacks, hit reactions, interactions, and other actions that should interrupt locomotion."
+        },
+        {
+          "id": "prop_am_related",
+          "name": "Related Concepts",
+          "value": "Anim Notify\nMotion Warping\nLinked Anim Graph"
+        }
+      ]
+    },
+    {
+      "id": "knowledge_pda",
+      "name": "Primary Data Asset",
+      "aliases": ["PrimaryDataAsset", "PDA", "Data Asset chính"],
+      "category": "UE5 / Data",
+      "short_description": "Asset-backed UObject used to store designer-facing data that can be referenced by other assets.",
+      "tags": ["UE5", "Data", "Asset"],
+      "properties": [
+        {
+          "id": "prop_pda_when",
+          "name": "When to Use",
+          "value": "Ability definitions, item tables, and any data that should live as an editor asset instead of a raw struct."
+        }
+      ]
+    },
+    {
+      "id": "knowledge_behavior_tree",
+      "name": "Behavior Tree",
+      "aliases": ["BT", "UBehaviorTree"],
+      "category": "UE5 / AI",
+      "short_description": "Tree of tasks and decorators that drives AI decision making together with a Blackboard.",
+      "tags": ["UE5", "AI"],
+      "properties": [
+        {
+          "id": "prop_bt_related",
+          "name": "Related Concepts",
+          "value": "Blackboard\nAI Controller\nStateTree"
+        }
+      ]
+    },
+    {
+      "id": "knowledge_statetree",
+      "name": "StateTree",
+      "aliases": ["State Tree", "UStateTree"],
+      "category": "UE5 / AI",
+      "short_description": "Data-driven hierarchical state machine often used as a modern alternative or complement to Behavior Trees.",
+      "tags": ["UE5", "AI", "StateTree"],
+      "properties": [
+        {
+          "id": "prop_st_when",
+          "name": "When to Use",
+          "value": "When AI or gameplay logic is easier to express as states and transitions than as a pure BT."
+        }
+      ]
+    }
+  ]
+}
