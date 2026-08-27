@@ -92,5 +92,5 @@ The core idea of the application is:
 
 The project is still under active development and testing. Feedback, bug reports, and pull requests are welcome.
 
-![QuickText Palette](assets/1.png)
+![QuickText Palette](assets/3.png)
 ![QuickText Palette](assets/2.png)
